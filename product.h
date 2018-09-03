@@ -1,6 +1,5 @@
 class Product 
 {
-  
 public:
 //constructors
 product(); // default constructor; 
