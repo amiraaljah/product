@@ -10,7 +10,7 @@ void setPrice(double price) const; //sets the price field
 int getId() const; // returns const id by value
   
 //These functions receive an unmodifiable reference to a Product object and
-//copies the object referenced to the current object 
+//copy the object referenced to the current object 
 bool isEqual(const Product& p) const; 
 bool isGreater(const Product& p) const;
 bool isSmaller(const Product& p) const;
