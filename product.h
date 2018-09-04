@@ -1,9 +1,12 @@
+#programa
+
+
 class Product 
 {
 public:
 //constructors
 product(); // default constructor; 
-product(int id, string name ,double price); //parameterized contructor (3 arg constr)
+product(int id, string name, double price); //parameterized contructor (3 arg constr)
   
 // setters and getters  
 void setPrice(double price) const; //sets the price field 
@@ -18,7 +21,7 @@ bool isSmaller(const Product& p) const;
 void Print() const; //display product information
 
 private:
- //member variables
+//member variables
 int id; //product id 
 string name; // product name
 double price; //product price
