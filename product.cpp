@@ -4,9 +4,9 @@
 using namespace std;
 
 
-Product::Product() //default constructor that initializes the product id,name  
+Product::Product()  
 {
-	int id = "0";
+	int id = 0;
 	string name = "0";
 	double price = 0.0;
 }
@@ -32,21 +32,21 @@ int getId() const
 }
 
 
-bool isGreter(const Product& p1, const Product& p2) {
-	if (p1.getId > p2.getId) {
+bool isGreter(const Product& p) {
+	if (ob1.getId > ob2.getId) {
 		// rest of the code
 	}
 }
 
-bool isSmaller(const Product& ob1, const Product& ob2) {
+bool isSmaller(const Product& p) {
 	if (ob1.getId < ob2.getId) {
 		// rest of the code
 	}
 }
 
 
-bool isEqual(const Product& p1, const Product& p2) {
-	if (p1.getId == p2.getId) {
+bool isEqual(const Product& p) {
+	if (ob1.getId == ob2.getId) {
 		// rest of the code
 	}
 }
