@@ -1,9 +1,3 @@
-#include<iostream>
-#include<string>
-#include "Product.h"
-using namespace std;
-
-
 Product::Product() //default constructor that initializes the product id,name  
 {
 	int id = 0;
@@ -26,35 +20,34 @@ void Product::setPrice(double price) const
 
 
 // Getter fucnction
-int getId() const 
+int Product::getId() const
 {
 	return id;
 }
 
 
-bool isGreter(const Product& p) {
-	if (ob1.getId > ob2.getId) {
-		cout << ob1 << "is greater than " << ob2 << endl;
+bool Product::isEqual(const Product& p) const{
+
+  if (ob1.getId == ob2.getId) {
+		cout << ob1 << "is equal to "<< ob2 << endl;
 	}
-	
 }
 
-bool isSmaller(const Product& p) {
-	if (ob1.getId < ob2.getId) {
+bool  Product::isGreater(const Product& p) const{
+if (ob1.getId > ob2.getId) {
+		cout << ob1 << "is greater than " << ob2 << endl;
+	}
+
+}
+
+bool  Product::isSmaller(const Product& p) const{
+if (ob1.getId < ob2.getId) {
 		cout << ob1 << "is smaller than" << ob2 << endl;
 	}
 
 }
 
-
-bool isEqual(const Product& p) {
-	if (ob1.getId == ob2.getId) {
-		cout << ob1 << "is equal to "<< ob2 << endl;
-	}
-}
-
-
-void Print() const
+void Product::Print() const
 {
 	cout << "Product ID :" << id << "Product name:" << name << "Product price:"<< price << endl;
 }
