@@ -45,8 +45,8 @@ bool isSmaller(const Product& ob1, const Product& ob2) {
 }
 
 
-bool isEqual(const Product& ob1, const Product& ob2) {
-	if (ob1.getId == ob2.getId) {
+bool isEqual(const Product& p1, const Product& p2) {
+	if (p1.getId == p2.getId) {
 		// rest of the code
 	}
 }
@@ -54,7 +54,7 @@ bool isEqual(const Product& ob1, const Product& ob2) {
 
 void Print() const
 {
-	cout << "Product ID :" << Product.id << "Product name:" << name << "Product price:"<< Product.price << endl;
+	cout << "Product ID :" <<  id << "Product name:" << name << "Product price:"<< price << endl;
 
 }
 
